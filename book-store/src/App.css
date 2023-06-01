@@ -272,3 +272,115 @@ ul{
   gap: 25px;
   cursor: pointer;
 }
+
+@media screen and (max-width: 480px) {
+
+  .logo h3 {
+    font-size: 14px;
+  }
+
+  /* Home */
+  .home .link {
+    font-size: 1rem;
+  }
+
+  /* Books */
+  .bookContainer {
+    padding: 1.3rem;
+    width: 200px;
+  }
+
+  .bookContainer img {
+    width: auto;
+    height: 150px;
+  }
+
+  .bookContainer .aboutBook h2 {
+    font-size: 14px;
+  }
+
+  .bookContainer .aboutBook article {
+    font-size: 11px;
+    margin-top: -10px;
+  }
+
+  .bookContainer .description {
+    font-size: 12px;
+  }
+
+  .bookContainer h3 {
+    font-size: 13px;
+    margin-top: -5px;
+  }
+
+  /* AddBooks */
+  .formContainer {
+    width: 74%;
+    margin-top: 8%;
+    padding: 18px 28px;
+  }
+
+  .formContainer .formContent .input-field {
+    margin: 16px 0;
+  }
+
+  .formContainer .formContent .input-field label {
+    font-size: 12px;
+
+  }
+
+  .formContainer .formContent .input-field input {
+    right: 28px;
+    width: 60%;
+    font-size: 12px;
+  }
+
+  .formContainer .formContent .available {
+    display: none;
+  }
+
+  .formContainer .formContent .btn {
+    margin-top: 25px;
+    padding: 8px 15px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #ccc;
+    background-color: #222;
+  }
+
+  /* About Us */
+  .about-container {
+    height: 130vh;
+    margin-top: 12rem;
+  }
+
+  .about-container h1 {
+    display: none;
+  }
+
+  .about-container p {
+    font-size: 12px;
+  }
+
+  .footer-element {
+    position: absolute;
+    bottom: -46%;
+    left: 0;
+  }
+
+  /* Footer*/
+  .footer {
+    padding: 12px 0;
+  }
+
+  .footer p {
+    font-size: 12px;
+  }
+
+  .footer .links {
+    display: none;
+  }
+}
