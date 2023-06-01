@@ -65,7 +65,7 @@ const BookDetails = () => {
                                 <label htmlFor="price">Price :</label>
                                 <input type="number" name="price" min={1} value={input.price} onChange={handleChange} />
                             </div>
-                            <div className="input-field">
+                            <div className="input-field available">
                                 <FormControlLabel
                                     control={<Checkbox checked={checked} onChange={() => setChecked(!checked)} />}
                                     label={<Typography fontWeight={400} fontFamily={'Poppins'} fontSize={18}>Available</Typography>} />
