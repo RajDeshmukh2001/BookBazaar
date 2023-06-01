@@ -26,7 +26,7 @@ const Navbar = () => {
                         onChange={(e, val) => setValue(val)} >
                         <Tab LinkComponent={NavLink} to='/add' label='Add Book' />
                         <Tab LinkComponent={NavLink} to='/books' label='Books' />
-                        <Tab LinkComponent={NavLink} to='/about' label='About Us' />
+                        <Tab LinkComponent={NavLink} to='/about' label='About' />
                     </Tabs>
                 </Toolbar>
             </AppBar>
