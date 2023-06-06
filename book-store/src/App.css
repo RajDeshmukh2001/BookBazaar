@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
-*{
-    font-family: 'Poppins', sans-serif;
+* {
+  font-family: 'Poppins', sans-serif;
 }
 
 .App {
@@ -38,26 +38,27 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
-body{
+body {
   background-color: #f5f5f5;
 }
 
 /* ScrollBar */
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 10px;
 }
 
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
   background-color: #e4e4e4;
   border-radius: 50px;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background-color: #555;
   border: 2px solid transparent;
   backface-visibility: content-box;
@@ -65,14 +66,14 @@ body{
 }
 
 /* Navbar */
-.logo h3{
+.logo h3 {
   text-align: center;
   padding: 0 0 4px 10px;
   font-weight: 400;
 }
 
 /* Home */
-.home .link{
+.home .link {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -85,14 +86,14 @@ body{
   padding: 10px 20px;
 }
 
-.home .link:hover{
+.home .link:hover {
   cursor: pointer;
   background-color: #000;
   color: #fff;
 }
 
 /* AddBooks */
-.formContainer{
+.formContainer {
   width: 50%;
   position: absolute;
   top: 50%;
@@ -105,24 +106,24 @@ body{
   background-color: #fff;
 }
 
-.formContainer .formContent{
+.formContainer .formContent {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
 }
 
-.formContainer .formContent .input-field{
+.formContainer .formContent .input-field {
   margin: 16px 0;
 }
 
-.formContainer .formContent .input-field label{
+.formContainer .formContent .input-field label {
   color: #000;
   font-size: 18px;
 
 }
 
-.formContainer .formContent .input-field input{
+.formContainer .formContent .input-field input {
   background-color: #fff;
   position: absolute;
   right: 70px;
@@ -136,11 +137,11 @@ body{
   transition: all 0.2s ease;
 }
 
-.formContainer .formContent .input-field input:is(:focus){
+.formContainer .formContent .input-field input:is(:focus) {
   border-bottom-color: #222;
 }
 
-.formContainer .formContent .btn{
+.formContainer .formContent .btn {
   margin-top: 25px;
   padding: 8px 15px;
   outline: none;
@@ -152,14 +153,14 @@ body{
   background-color: #222;
 }
 
-.formContainer .formContent .btn:hover{
+.formContainer .formContent .btn:hover {
   cursor: pointer;
   color: #fff;
   background-color: #000;
 }
 
 /* Books */
-.bookContainer{
+.bookContainer {
   padding: 1.5rem;
   width: 250px;
   display: flex;
@@ -169,29 +170,29 @@ body{
   background-color: #fff;
 }
 
-.bookContainer img{
+.bookContainer img {
   width: auto;
   height: 250px;
 }
 
-.bookContainer .aboutBook{
+.bookContainer .aboutBook {
   margin-top: 0px;
   text-align: center;
 }
 
-.bookContainer .aboutBook h2{
+.bookContainer .aboutBook h2 {
   font-size: 20px;
   text-transform: capitalize;
 }
 
-.bookContainer .aboutBook article{
+.bookContainer .aboutBook article {
   font-size: 14px;
   color: #333;
   margin-top: -20px;
   text-transform: capitalize;
 }
 
-.bookContainer .description{
+.bookContainer .description {
   width: 100%;
   font-size: 15px;
   margin-top: 4px;
@@ -203,18 +204,18 @@ body{
   overflow: hidden;
 }
 
-.bookContainer h3{
+.bookContainer h3 {
   margin-top: -15px;
 }
 
-.bookContainer .btns{
+.bookContainer .btns {
   margin-top: -6px;
   display: flex;
   justify-content: space-between;
   gap: 20px;
 }
 
-ul{
+ul {
   margin-top: 3%;
   margin-left: -40px;
   display: flex;
@@ -226,7 +227,7 @@ ul{
 }
 
 /* About Us */
-.about-container{
+.about-container {
   width: 80%;
   position: absolute;
   top: 50%;
@@ -234,14 +235,15 @@ ul{
   transform: translate(-50%, -50%);
 }
 
-.about-container .third{
+.about-container .third {
   font-style: italic;
 }
 
-.about-container .first span{
+.about-container .first span {
   font-weight: 600;
 }
-.footer-element{
+
+.footer-element {
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -249,7 +251,7 @@ ul{
 }
 
 /* Footer*/
-.footer{
+.footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -260,15 +262,130 @@ ul{
   padding: 15px 0;
 }
 
-.footer p{
+.footer p {
   margin: 0;
   padding: 0;
   font-size: 16px;
   font-weight: 400;
 }
 
-.footer .links{
+.footer .links {
   display: flex;
   gap: 25px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+
+  .logo h3 {
+    font-size: 14px;
+    text-align: center;
+    padding: 0 0 4px 10px;
+    font-weight: 400;
+  }
+
+  /* Home */
+  .home .link {
+    font-size: 1rem;
+  }
+
+  /* Books */
+  .bookContainer {
+    padding: 1.3rem;
+    width: 200px;
+  }
+
+  .bookContainer img {
+    width: auto;
+    height: 150px;
+  }
+
+  .bookContainer .aboutBook h2 {
+    font-size: 14px;
+  }
+
+  .bookContainer .aboutBook article {
+    font-size: 11px;
+    margin-top: -10px;
+  }
+
+  .bookContainer .description {
+    font-size: 12px;
+  }
+
+  .bookContainer h3 {
+    font-size: 13px;
+    margin-top: -5px;
+  }
+
+  /* AddBooks */
+  .formContainer {
+    width: 74%;
+    margin-top: 8%;
+    padding: 18px 28px;
+  }
+
+  .formContainer .formContent .input-field {
+    margin: 16px 0;
+  }
+
+  .formContainer .formContent .input-field label {
+    font-size: 12px;
+
+  }
+
+  .formContainer .formContent .input-field input {
+    right: 28px;
+    width: 60%;
+    font-size: 12px;
+  }
+
+  .formContainer .formContent .available {
+    display: none;
+  }
+
+  .formContainer .formContent .btn {
+    margin-top: 25px;
+    padding: 8px 15px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #ccc;
+    background-color: #222;
+  }
+
+  /* About Us */
+  .about-container {
+    height: 130vh;
+    margin-top: 12rem;
+  }
+
+  .about-container h1 {
+    display: none;
+  }
+
+  .about-container p {
+    font-size: 12px;
+  }
+
+  .footer-element {
+    position: absolute;
+    bottom: -46%;
+    left: 0;
+  }
+
+  /* Footer*/
+  .footer {
+    padding: 12px 0;
+  }
+
+  .footer p {
+    font-size: 12px;
+  }
+
+  .footer .links {
+    display: none;
+  }
 }

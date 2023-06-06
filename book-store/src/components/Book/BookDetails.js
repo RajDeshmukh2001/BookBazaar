@@ -11,13 +11,13 @@ const BookDetails = () => {
     console.log(id);
     useEffect(() => {
         const fetchHandler = async () => {
-            await axios.get(`http://localhost:5000/books/${id}`).then((res) => res.data).then((data) => setInput(data.book))
+            await axios.get(`https://book-bazaar.onrender.com//books/${id}`).then((res) => res.data).then((data) => setInput(data.book))
         };
         fetchHandler();
     }, [id]);
 
     const sendRequest = async () => {
-        await axios.put(`http://localhost:5000/books/${id}`, {
+        await axios.put(`https://book-bazaar.onrender.com//books/${id}`, {
             name: String(input.name),
             author: String(input.author),
             description: String(input.description),
@@ -65,7 +65,7 @@ const BookDetails = () => {
                                 <label htmlFor="price">Price :</label>
                                 <input type="number" name="price" min={1} value={input.price} onChange={handleChange} />
                             </div>
-                            <div className="input-field">
+                            <div className="input-field available">
                                 <FormControlLabel
                                     control={<Checkbox checked={checked} onChange={() => setChecked(!checked)} />}
                                     label={<Typography fontWeight={400} fontFamily={'Poppins'} fontSize={18}>Available</Typography>} />

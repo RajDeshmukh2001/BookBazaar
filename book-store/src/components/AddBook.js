@@ -23,7 +23,7 @@ const AddBook = () => {
     };
 
     const sendRequest = async () => {
-        await axios.post('http://localhost:5000/books', {
+        await axios.post('https://book-bazaar.onrender.com//books', {
             name: String(input.name),
             author: String(input.author),
             description: String(input.description),
@@ -63,7 +63,7 @@ const AddBook = () => {
                             <label htmlFor="price">Price :</label>
                             <input type="number" name="price" min={1} value={input.price} onChange={handleChange} />
                         </div>
-                        <div className="input-field">
+                        <div className="input-field available">
                             <FormControlLabel 
                                 control={<Checkbox checked={checked} onChange={()=>setChecked(!checked)} />} 
                                 label={<Typography fontWeight={400} fontFamily={'Poppins'} fontSize={18}>Available</Typography>} />

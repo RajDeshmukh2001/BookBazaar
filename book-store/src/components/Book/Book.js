@@ -8,7 +8,7 @@ const Book = (props) => {
     const { _id, name, author, description, price, image } = props.book;
 
     const deleteHandler = async () => {
-        await axios.delete(`http://localhost:5000/books/${_id}`)
+        await axios.delete(`https://book-bazaar.onrender.com//books/${_id}`)
         .then((res) => res.data)
         .then(() => navigate('/'))
         .then(() => navigate('/books'));
