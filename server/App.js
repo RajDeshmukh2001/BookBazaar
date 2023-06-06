@@ -15,3 +15,4 @@ mongoose.connect(
 ).then(() => {
     app.listen(PORT);
 }).catch((err) => console.log(err));
+}).catch((err) => console.log(err));
