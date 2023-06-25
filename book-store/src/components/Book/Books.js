@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Book from '../Book/Book';
-const URL = 'https://book-bazaar.onrender.com//books';
+const URL = 'https://book-bazaar-23.onrender.com/books';
 
 const fetchHandler = async () => {
     return await axios.get(URL).then((res) => res.data);
