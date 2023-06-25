@@ -11,13 +11,13 @@ const BookDetails = () => {
     console.log(id);
     useEffect(() => {
         const fetchHandler = async () => {
-            await axios.get(`https://book-bazaar.onrender.com//books/${id}`).then((res) => res.data).then((data) => setInput(data.book))
+            await axios.get(`https://book-bazaar-23.onrender.com/books/${id}`).then((res) => res.data).then((data) => setInput(data.book))
         };
         fetchHandler();
     }, [id]);
 
     const sendRequest = async () => {
-        await axios.put(`https://book-bazaar.onrender.com//books/${id}`, {
+        await axios.put(`https://book-bazaar-23.onrender.com/books/${id}`, {
             name: String(input.name),
             author: String(input.author),
             description: String(input.description),
